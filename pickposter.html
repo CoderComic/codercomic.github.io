@@ -4,7 +4,7 @@
 <head>
    <meta name="author" content="Yemi and Anna">
    <meta name="description" content="A responsive movie poster grabber">
-   <title>Front Row by Ben Howdle</title>
+   <title>MOIVE BY ANNA AND YEMI</title>
    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.2.min.js"></script>
         <!--jQuery, linked from a CDN-->
@@ -66,7 +66,7 @@
 
          } else {
 
-            $('#poster').html ("<h2 class='loading'>Your poster is on its way!</h2>");
+            $('#poster').html ("<h2 class='loading'>COOL YOUR JETS POSTER LOADING!</h2>");
             var api_key = "91535271acefbdee5f333162589e226f";
  
             $.getJSON("https://api.themoviedb.org/3/search/movie?api_key=91535271acefbdee5f333162589e226f&language=en-US&query=" + film, function(json) {    console.log(json);
@@ -77,7 +77,7 @@
                
 
        if (json != "Nothing found."){
-                     $('#poster').html('<h2 class="loading">Well, gee whiz! We found you a poster, skip!</h2><img id="thePoster" src=' + fullImagePath + ' />');
+                     $('#poster').html('<h2 class="loading">OJ OJ OJ HITTADE DIN POSTER!, skip!</h2><img id="thePoster" src=' + fullImagePath + ' />');
                   } else {
                      $.getJSON("https://api.themoviedb.org/3/search/movie?api_key=91535271acefbdee5f333162589e226f&language=en-US&query=" + film, function(json) {
                         console.log(json);
