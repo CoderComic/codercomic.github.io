@@ -77,7 +77,7 @@
                
 
        if (json != "Nothing found."){
-                     $('#poster').html('<h2 class="loading">OJ OJ OJ HITTADE DIN POSTER!, skip!</h2><img id="thePoster" src=' + fullImagePath + ' />');
+                     $('#poster').html('<h2 class="loading">OJ OJ OJ HITTADE DIN POSTER! SUCCESS!</h2><img id="thePoster" src=' + fullImagePath + ' />');
                   } else {
                      $.getJSON("https://api.themoviedb.org/3/search/movie?api_key=91535271acefbdee5f333162589e226f&language=en-US&query=" + film, function(json) {
                         console.log(json);
